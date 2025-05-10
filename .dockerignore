@@ -1,0 +1,12 @@
+*
+!config
+!connections.js
+!index.js
+!log.js
+!package-lock.json
+!package.json
+!redis.js
+!server.js
+!statsd.js
+!utils.js
+!zotero_api.js

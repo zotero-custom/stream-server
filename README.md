@@ -1,3 +1,23 @@
+## Build Image
+
+Note: This is done in the CI/CD pipeline automatically,
+so you only need to do this if you want to build manually
+(e.g. for debugging, etc.).
+
+```sh
+docker build -t ghcr.io/zotero-custom/stream-server:latest .
+```
+
+## Run Container
+
+```
+docker run --rm -it -v ./test:/stream-server/test ghcr.io/zotero-custom/stream-server:latest sh
+
+# Then, for example, inside container run:
+npm run test
+npm run test_config
+```
+
 ## Contributing
 
 1. Clone the repo
